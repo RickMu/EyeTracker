@@ -6,8 +6,8 @@ function WebGazeSetup(){
         .setGazeListener(function(data, clock) {
           //   console.log(data); /* data is an object containing an x and y key which are the x and y prediction coordinates (no bounds limiting) */
           //   console.log(clock); /* elapsed time in milliseconds since webgazer.begin() was called */
-          if (CalibrationFinish==true)
-            console.log(data)
+          //if (CalibrationFinish==true)
+            updateGazeDate(data);
         })
         .begin()
         .showPredictionPoints(true); /* shows a square every 100 milliseconds where current prediction is */
@@ -25,6 +25,7 @@ function WebGazeSetup(){
         //Position the camera feedback to the top left corner.
         video.style.display = 'block';
         video.style.position = 'fixed';
+        // video.style.zIndex = 2147483647;
         video.style.top = topDist;
         video.style.left = leftDist;
 

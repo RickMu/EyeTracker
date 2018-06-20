@@ -33,7 +33,9 @@
         "js/calibration.js",
         "js/precision_store_points.js",
         "js/precision_calculation.js",
-        "js/resize_canvas.js"
+        "js/resize_canvas.js",
+        "js/simpleheat.js",
+        "js/moment.min.js"
       ]
     }
   ],

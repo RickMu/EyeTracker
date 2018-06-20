@@ -5,7 +5,7 @@
 'use strict';
 
 let calibration = document.getElementById('calibrationBtn');
-let traceBtn = document.getElementById('traceBtn');
+let heatMapBtn = document.getElementById('heatMapBtn');
 
 calibration.onclick = function(element) {
   chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
@@ -14,9 +14,9 @@ calibration.onclick = function(element) {
   });
 };
 
-traceBtn.onclick = function(element) {
+heatMapBtn.onclick = function(element) {
   chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-    chrome.tabs.sendMessage(tabs[0].id, { msg: "trace"  }, function(response) {
+    chrome.tabs.sendMessage(tabs[0].id, { msg: "heatMap"  }, function(response) {
     });
   });
 };
