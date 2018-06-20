@@ -25,7 +25,7 @@ function WebGazeSetup(){
         //Position the camera feedback to the top left corner.
         video.style.display = 'block';
         video.style.position = 'fixed';
-        // video.style.zIndex = 2147483647;
+        video.style.zIndex = 2147483647;
         video.style.top = topDist;
         video.style.left = leftDist;
 
@@ -43,6 +43,7 @@ function WebGazeSetup(){
 
         //Setup the size of canvas
         overlay.style.position = 'fixed';
+        overlay.style.zIndex = 2147483647;
         overlay.width = width;
         overlay.height = height;
         overlay.style.top = topDist;
@@ -53,6 +54,7 @@ function WebGazeSetup(){
         var faceOverlay = document.createElement('face_overlay');
         faceOverlay.id = 'faceOverlay';
         faceOverlay.style.position = 'fixed';
+        faceOverlay.style.zIndex = 2147483647;
         faceOverlay.style.top = '59px';
         faceOverlay.style.left = '107px';
         faceOverlay.style.border = 'solid';

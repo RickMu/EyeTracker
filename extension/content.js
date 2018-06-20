@@ -39,7 +39,7 @@ function initDiv(){
     div = document.createElement( 'div' );
     div.className = 'calibrationDiv';
     div.style.position = "fixed";
-    // div.style.zIndex = 2147483647;
+    div.style.zIndex = 2147483647;
 
     for (var i = 1; i < 10; i++){
         point = document.createElement( 'button' );

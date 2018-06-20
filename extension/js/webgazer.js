@@ -10428,7 +10428,7 @@ function store_points(x, y, k) {
     //debug element (starts offscreen)
     var gazeDot = document.createElement('div');
     gazeDot.style.position = 'fixed';
-    gazeDot.style.zIndex = 99999;
+    gazeDot.style.zIndex = 2147483647;
     gazeDot.style.left = '-5px'; //'-999em';
     gazeDot.style.top  = '-5px';
     gazeDot.style.width = '10px';
