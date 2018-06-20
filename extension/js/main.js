@@ -6,7 +6,7 @@ function WebGazeSetup(){
         .setGazeListener(function(data, clock) {
           //   console.log(data); /* data is an object containing an x and y key which are the x and y prediction coordinates (no bounds limiting) */
           //   console.log(clock); /* elapsed time in milliseconds since webgazer.begin() was called */
-          //if (CalibrationFinish==true)
+          if (CalibrationFinish==true)
             updateGazeDate(data);
         })
         .begin()

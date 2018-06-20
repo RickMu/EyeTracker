@@ -67,5 +67,5 @@ function updateGazeDate(point){
 }
 
 function showHeatMap() {
-    simpleheat('heat_canvas').data(gazeData).draw()
+    simpleheat('heat_canvas').data(gazeData).max(5).draw();
 };
