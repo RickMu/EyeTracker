@@ -32,7 +32,8 @@
         "js/main.js",
         "js/calibration.js",
         "js/precision_store_points.js",
-        "js/precision_calculation.js"
+        "js/precision_calculation.js",
+        "js/resize_canvas.js"
       ]
     }
   ],
