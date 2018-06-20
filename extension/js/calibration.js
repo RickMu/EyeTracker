@@ -1,5 +1,6 @@
 var PointCalibrate = 0;
 var CalibrationPoints={};
+var CalibrationFinish = false;
 
 /**
  * Clear the canvas and the calibration button.
@@ -100,6 +101,7 @@ $(document).ready(function(){
                           if (isConfirm){
                             //clear the calibration & hide the last middle button
                             ClearCanvas();
+                            CalibrationFinish = true;
                           } else {
                             //use restart function to restart the calibration
                             ClearCalibration();

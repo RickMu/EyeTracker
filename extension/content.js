@@ -40,3 +40,18 @@ function initDiv(){
     }
 	document.body.appendChild( div );
 }
+
+// var gazeData = [];
+// var heat = simpleheat('canvas').data(gazeData).max(18), frame;
+
+
+// function updateGazeDate(evt, point){
+//     var gazePoint = [point.x,point.y,1];
+//     gazeData.push(gazePoint);
+
+//     var curTime =  moment().valueOf();
+//     var positionTime  = {'x':point.x,
+//                          'y':point.y,
+//                          'time':curTime};
+//     gazePositionTime.push(positionTime); 
+// }
