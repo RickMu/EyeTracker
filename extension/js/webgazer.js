@@ -10660,6 +10660,8 @@ function store_points(x, y, k) {
                 k = 0;
               }
             }
+
+            pred = updateLocation(pred);
             gazeDot.style.transform = 'translate3d(' + pred.x + 'px,' + pred.y + 'px,0)';
 
             //Check that the eyes are inside of the validation box
@@ -11154,3 +11156,19 @@ function store_points(x, y, k) {
     }
 
 }(window));
+
+var preX = 0;
+var preY = 0;
+
+function updateLocation(location){
+
+    if (preX!=0 && preY!=0){
+      location.x = preX + ( location.x - preX )*0.3;
+      location.y = preY + ( location.y - preY )*0.3;
+    }
+
+    preX = location.x;
+    preY = location.y;
+
+    return location;
+}
