@@ -18,7 +18,7 @@
   },
   "content_scripts" : [
     {
-      "matches" :  ["http://*.apps.build.rokt.com/*","https://*.apps.build.rokt.com/*"],
+      "matches" :  ["http://*.apps.build.rokt.com/*","https://*.apps.build.rokt.com/*","https://roktdemo.com/client/*"],
       "css": [
         "content.css",
         "css/style.css",
