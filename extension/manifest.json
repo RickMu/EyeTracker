@@ -19,14 +19,20 @@
   "content_scripts" : [
     {
       "matches" :  ["http://*.apps.build.rokt.com/*","https://*.apps.build.rokt.com/*"],
-      "css": ["content.css"],
+      "css": [
+        "content.css",
+        "css/style.css",
+        "css/bootstrap.min.css"
+      ],
       "js" : [
         "content.js",
         "js/webgazer.js",
         "js/jquery.min.js",
         "js/sweetalert.min.js",
         "js/main.js",
-        "js/calibration.js"  
+        "js/calibration.js",
+        "js/precision_store_points.js",
+        "js/precision_calculation.js"
       ]
     }
   ],

@@ -1,4 +1,4 @@
-console.log("content load.........................");
+console.log("content script load.........................");
 
 
 
@@ -14,6 +14,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 function calibration(){
     console.log("start calibration");
     WebGazeSetup();
+    Restart();
 }
 
 function trace(){
@@ -25,7 +26,7 @@ function initDiv(){
     canvas.id = 'plotting_canvas';
     canvas.width = "500";
     canvas.height = "500";
-    canvas.style = "cursor:crosshair;"
+    canvas.style = "cursor:crosshair;position: fixed;"
 
     document.body.appendChild( canvas );
 
